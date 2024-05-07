@@ -16,7 +16,7 @@ const MainPage = ({user}) => {
     const navigate = useNavigate();
     const [loggedInUser] = useLoggedInUser();
     const[isLoading, setIsLoading] = useState("");
-    const[imageURL, setImageURL] = useState("");
+    //const[imageURL, setImageURL] = useState("");
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
