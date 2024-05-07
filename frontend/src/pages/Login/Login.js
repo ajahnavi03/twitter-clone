@@ -21,7 +21,7 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
 
-      const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
+      const [signInWithGoogle, googleUser] = useSignInWithGoogle(auth);
 
       if (user||googleUser){
         navigate('/')
